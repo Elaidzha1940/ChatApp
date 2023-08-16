@@ -1,9 +1,11 @@
+//  /*
 //
-//  ChatAppApp.swift
-//  ChatApp
+//  Project: ChatApp
+//  ContentView.swift
+//  Created by: Elaidzha Shchukin
+//  Date: 16.08.2023
 //
-//  Created by Elaidzha Shchukin on 16.08.2023.
-//
+//  */
 
 import SwiftUI
 
