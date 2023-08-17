@@ -23,12 +23,20 @@ struct MessageBubble: View {
             HStack {
                 Text(message.text)
                     .padding()
-                    .background(message.received ? Color("violet") : Color("peach"))
+                    .background(message.received ? Color("violet").opacity(0.7) : Color("peach").opacity(0.6))
                     .cornerRadius(30)
             }
             .frame(maxWidth: 300, alignment: message.received ? .leading : .trailing)
             .onTapGesture {
                 showTime.toggle()
+            }
+            
+            if showTime {
+                Text("\(message.timestamp.formatted(.dateTime.hour().minute()))")
+                    .font(.system(size: 15, weight: .bold, design: .serif))
+                    .foregroundColor(.gray)
+                    .padding(message.received ? .leading : .trailing)
+
             }
         }
         .frame(maxWidth: .infinity, alignment: message.received ? .leading : .trailing)
