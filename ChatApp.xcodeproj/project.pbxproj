@@ -11,6 +11,7 @@
 		E455BB502A8D51B300607418 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E455BB4F2A8D51B300607418 /* ContentView.swift */; };
 		E455BB522A8D51B400607418 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E455BB512A8D51B400607418 /* Assets.xcassets */; };
 		E455BB562A8D51B400607418 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E455BB552A8D51B400607418 /* Preview Assets.xcassets */; };
+		E4B11B612A8E4D55009B9708 /* TitleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B11B602A8E4D55009B9708 /* TitleRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		E455BB512A8D51B400607418 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E455BB532A8D51B400607418 /* ChatApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChatApp.entitlements; sourceTree = "<group>"; };
 		E455BB552A8D51B400607418 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E4B11B602A8E4D55009B9708 /* TitleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				E455BB4D2A8D51B300607418 /* ChatAppApp.swift */,
 				E455BB4F2A8D51B300607418 /* ContentView.swift */,
+				E4B11B5F2A8E4D22009B9708 /* Components */,
 				E455BB512A8D51B400607418 /* Assets.xcassets */,
 				E455BB532A8D51B400607418 /* ChatApp.entitlements */,
 				E455BB542A8D51B400607418 /* Preview Content */,
@@ -67,6 +70,14 @@
 				E455BB552A8D51B400607418 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E4B11B5F2A8E4D22009B9708 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E4B11B602A8E4D55009B9708 /* TitleRow.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 			files = (
 				E455BB502A8D51B300607418 /* ContentView.swift in Sources */,
 				E455BB4E2A8D51B300607418 /* ChatAppApp.swift in Sources */,
+				E4B11B612A8E4D55009B9708 /* TitleRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
