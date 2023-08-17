@@ -16,7 +16,8 @@ struct ContentView: View {
         
         VStack {
            
-            
+            TitleRow()
+                .background(Color("peach"))
         }
     }
 }
