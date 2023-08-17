@@ -30,6 +30,22 @@ struct TitleRow: View {
             } placeholder: {
                  ProgressView()
             }
+            
+            VStack(alignment: .leading) {
+                Text(name)
+                    .font(.system(size: 25, weight: .bold, design: .serif))
+                
+                Text("Online")
+                    .font(.system(size: 15, weight: .bold, design: .serif))
+                    .foregroundColor(.gray)
+
+            }
+            Image(systemName: "phone.fill")
+                .foregroundColor(.gray)
+                .padding(10)
+                .background(.white)
+                .cornerRadius(50)
+
         }
     }
 }
@@ -37,5 +53,6 @@ struct TitleRow: View {
 struct TitleRow_Previews: PreviewProvider {
     static var previews: some View {
         TitleRow()
+            .background(Color("peach"))
     }
 }
