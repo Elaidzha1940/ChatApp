@@ -5,19 +5,19 @@
 //  Created by: Elaidzha Shchukin
 //  Date: 16.08.2023
 //
+//  Status: in progress | Not decorated
+//
 //  */
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+           
+            
         }
-        .padding()
     }
 }
 
