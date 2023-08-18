@@ -28,9 +28,7 @@ class MessagesManager: ObservableObject {
                 print("Error fetching documents: \(String(describing: error))")
                 return
             }
-            
-            documents.compactMap { documents -> Message? in
-                
+            self.messages = documents.compactMap { documents -> Message? in
                 do {
                     return try documents.data(as: Message.self)
                 } catch {
@@ -38,6 +36,18 @@ class MessagesManager: ObservableObject {
                     return nil
                 }
             }
+            
+            self.messages.sort { $0.timestamp < $1.timestamp }
+        }
+    }
+    
+    func sendMessage(text: String) {
+        do {
+            let newMessage = Message(id: "\(UUID())", text: text, received: false, timestamp: Date())
+            
+            try db.collection("messages").document().setData(from: newMessage)
+        } catch {
+            print("Error adding message to Firestore: \(error)")
         }
     }
 }
